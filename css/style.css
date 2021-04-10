@@ -1,0 +1,342 @@
+/* Somente Tags HTML */
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: #0F0F0F
+}
+
+main {
+  width: 86%;
+  margin: 30px auto;
+} 
+
+footer {
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0F0F0F;
+}
+
+/* Classes */
+
+section .popular {
+  margin-right:20px;
+  display: inline;
+}
+
+.Destaques .coluna { 
+  width: 550px;
+  height: 350px;
+  border-radius: 3%;
+}
+
+.Destaques .texto {
+  color: white;
+  text-decoration: none;
+  width: 100px;
+}
+
+.popular img {
+width: 200px;
+height: 150px;
+float: left;
+margin-right: 10px;
+margin-bottom: 5px;
+border-radius: 3%;
+}
+
+.popular a {
+  text-decoration: none;
+  color: black;
+ 
+}
+
+.popular p{
+  font-size: 20px;
+}
+
+.popular {
+  margin-bottom: 60px;
+}
+
+.botao {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.logo-rodape {
+  display: flex;
+  justify-content: center;
+}
+
+.texto-rodape1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.texto-rodape1 a {
+  color: #FFFFFF;
+} 
+
+.texto-rodape1 svg {
+  color: #FFFFFF;
+}
+
+.texto-rodape2 {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+.destaque {
+display: inline;
+}
+
+.Destaques .destaque {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.Destaques figcaption {
+  position: absolute;
+  top: 225px;
+  right: 20px;
+  left: 20px;
+  font-size: 30px; 
+}
+
+figcaption {
+  width:540px;
+}
+
+/* IDs */
+#navNaoIndex {
+  display: flex;
+  color: rgba(255, 255, 255, .55);
+}
+
+#navNaoIndex a {
+  color: rgba(255, 255, 255, .55);
+}
+
+#navNaoIndex p {
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+#navNaoIndexE {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#navNaoIndexC {
+  display: flex;
+  margin: auto;
+}
+
+/* Página suporte */
+form div {
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+form .botao {
+  margin-top:20px;
+}
+
+section svg {
+margin:0 auto ;
+margin-bottom: 20px;
+display: flex;
+justify-content: center;
+}
+
+.suporte h1 {
+  text-align: center;
+}
+
+/*Noticia1*/
+.noticia1 h1 {
+  text-align: center;
+}
+
+.noticia1 div {
+  width: 800px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.noticia1 p{
+  font-size: 20px;
+  text-align: justify;
+}
+
+/*Noticias*/
+.Noticias {
+  display: block;
+}
+
+.Linha-noticias {
+  display: flex;
+  margin: 32px auto;
+}
+
+.Linha-noticias a {
+  display: flex
+}
+
+.Linha-noticias img {
+  width: 500px;
+  height: 300px;
+  border-radius: 5px;
+}
+.Linha-noticias-impar .imagem-noticias, .texto-noticias {
+  margin-right: 20px;
+  
+  color: black;
+}
+
+.Linha-noticias-par .imagem-noticias, .texto-noticias {
+  margin-left: 20px;
+
+  color: black;
+}
+
+.Linha-noticias p {
+  font-size: 25px;
+}
+.botao2{
+  margin-top: 20px;
+}
+.pagination {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/*Pagina sobre*/
+#textosobre p {
+font-size: 18px}
+
+/* @media */
+@media (max-width:600px) {
+  .logo{
+    margin: 0 auto;
+    margin-left: 0;
+  }
+ 
+  .Destaques figcaption {
+  position: unset;
+  width: 100%;
+  }
+
+ .Destaques .texto {
+    color: black;
+  }
+
+ .Destaques .coluna {
+    height: 250px;
+  }
+
+  .popular img {
+    width: 260px;
+    height: 200px;
+  }
+
+  .popular h3, p {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .texto-rodape1 {
+    display: block;
+  
+  }
+
+  .texto-rodape2 {
+    margin: auto;
+  }
+
+  /*Pagina Noticias*/
+  .Noticias img{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .Noticias .Linha-noticias img {
+    height: 200px;
+  }
+
+  .Linha-noticias a{
+    display: block;
+  }
+  .Linha-noticias-impar .imagem-noticias, .texto-noticias {
+    margin:auto;
+  }
+
+  .Linha-noticias-par .imagem-noticias, .texto-noticias {
+    margin: auto;
+    
+  }
+}
+
+
+@media (min-width:1600px) {
+  .logo {
+    width: 250px;
+  }
+
+  .Destaques figcaption {
+  width: 550px;
+  }
+
+  .Destaques .texto {
+    font-size: 50px;
+  }
+   
+  .Destaques .coluna {
+    width: 600px;
+    height: 450px;
+  }
+
+  .popular img {
+    width: 260px;
+    height: 200px;
+  }
+
+  .popular h3, p {
+    width: 100%;
+    display: inline-block;
+    font-size: 60px;
+  }
+
+  .texto-rodape1 {
+    display: flex;
+    margin: auto;
+  }
+  
+  .texto-rodape2 {
+    margin: auto;
+  }
+
+  /*Noticia1*/
+  .noticia1 h1{
+    text-align: center;
+  }
+  .noticia1 p{
+  font-size: 30px;
+  
+  text-align: center;
+  }
+}
