@@ -1,193 +1,213 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+    <html>
+    <head>
+        <title>Sanderson Raul</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Side Navigation -->
+        <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+        <h1 class="w3-xxxlarge w3-text-theme">Redes Sociais</h1>
+        <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+        <a href="https://www.instagram.com/raull_oliiveira/" class="w3-bar-item w3-button"><i class="fa fa-instagram w3-margin-bottom w3-text-theme" style="font-size:30px"></i> Instagram</a>
+        <a href="https://www.linkedin.com/in/raul-oliveira1231/" class="w3-bar-item w3-button"><i class="fa fa-linkedin w3-margin-bottom w3-text-theme" style="font-size:30px"></i> Linkedin</a>
+        </nav>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ChaseTech</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-	 crossorigin="anonymous">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-	 crossorigin="anonymous">
-	<link rel="shortcut icon" href="img/favicon.png">
-	<link rel="stylesheet" href="https://sandersonraul.github.io/css/style.css">
-</head>
+        <!-- Header -->
+        <header class="w3-container w3-theme w3-padding" id="myHeader">
+        <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+        <div class="w3-center">
+        <h4>WEB DEVELOPER RUBY</h4>
+        <h1 class="w3-xxxlarge w3-animate-bottom">Raul Oliveira</h1>
+        <img src="imagem.jpeg" style="width: 200px;">
+            <div class="w3-padding-32">
+            <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">ABOUT ME</button>
+            </div>
+        </div>
+        </header>
 
-<body>
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark ">
-			<div class="container-fluid">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="logo"><a href="index.html"><img class="logo" src="img/logo.png" alt="Logo ChaseTech"></a></div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="noticias.html">Notícias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="suporte.html">Newsletter</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Categorias
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Ciência e Espaço</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Games e Consoles</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Dicas e Tutoriais</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-          <button class="btn btn-secondary" type="submit">Pesquisar</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-</header>
-  <main>
-    <article class="Destaques">
-      <section class="destaque">
-        <figure class="container">
-          <a href="noticia1.html"><img class="coluna img-fluid" src="img/5g.jpg" alt="5g-logo" /></a>
-          <figcaption> <a class="texto" href="noticia1.html">5 maneiras como a tecnologia 5G vai mudar a sua vida</a></figcaption>
-        </figure>  
-      </section>
+        <!-- Modal -->
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-top">
+            <header class="w3-container w3-theme-l1"> 
+                <span onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright">×</span>
+                <h4>About me</h4>
+                
+            </header>
+            <div class="w3-padding">
+				<li>Cursando Análise e Desenvolvimento de Sistemas</li>
+				<li>Estagiário de desenvolvimento na Brasil System</li>
+				<li>Atualmente estou aprendendo principalmente sobre Ruby on Rails e bibliotecas/frameworks JavaScript.</li>
 
-      <section class="destaque">
-        <figure class="container">
-          <a href=""><img class="coluna img-fluid" src="img/microsoft.jpg" alt="microsoft-logo" /></a>
-          <figcaption> <a class="texto" href="">Microsoft confirma ataque hacker aos seus sistemas</a></figcaption>
-        </figure>  
-      </section>
+            </div>
+            
+            </div>
+        </div> 
+         <div class="w3-center w3-padding"><h2> <strong>Linguagens e ferramentas que utilizo</strong></h2></div>
+		
+        <div class="w3-row-padding w3-center w3-margin-top"> 
+            <div class="w3-third">
+                <div class="w3-card w3-container" style="min-height:480px">
+                    <h3>HTML</h3><br><br>
+                    <img src="data:image/png;base64,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" alt="html-icon" width="250" height="250">
+            
+                </div>
+            </div>
 
-      <section class="destaque">
-        <figure class="container">
-          <a href=""><img class="coluna img-fluid" src="img/cyberpunk.jpg" alt="cyberpunk-logo" /></a>
-          <figcaption> <a class="texto" href="">Sony remove Cyberpunk 2077 da PSN e vai reembolsar quem quiser</a></figcaption>
-        </figure>  
-      </section>
+            <div class="w3-third">
+                <div class="w3-card w3-container" style="min-height:480px">
+                    <h3>CSS</h3><br><br>
+					<img src="data:image/png;base64,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" alt="css-icon" width="250" height="250">
+                </div>
+            </div>
 
-      <section class="destaque">
-        <figure class="container">
-          <a href=""><img class="coluna img-fluid" src="img/s21.jpg" alt="s21" /></a>
-          <figcaption> <a class="texto" href="">Samsung Galaxy S21 entra  em pré-venda na China</a></figcaption>
-        </figure>  
-      </section>
-     
-      <div class=" botao position-relative">
-       <a href="noticias.html"><div class="position-absolute bottom-0 end-0"><button type="button" class="btn btn-secondary">Ver mais </button></div></a>
-       </div>
-    </article>
-    
-     
-    <article class="Populares">
-      <section class="popular">
+			<div class="w3-third">
+                <div class="w3-card w3-container" style="min-height:480px">
+                    <h3>Javascript</h3><br><br>
+					<img src="https://pcodinomebzero.neocities.org/Imagens/javascript1.png" alt="js-icon" width="250" height="250">
+                </div>
+            </div>
 
-        <hr>
-        <h1>Mais Populares</h1>
-        <hr>
+            <div class="w3-third">
+                <div class="w3-card w3-container" style="min-height:480px">
+                    <h3>Ruby</h3><br><br> 
+					<img src="https://image.flaticon.com/icons/png/512/919/919842.png" alt="ruby-icon" width="250" height="250">                  
+                </div>
+            </div> 
+            
+            
 
-        <a href=""><img class="img-fluid" src="img/disney.jpg" alt="disney-logo"></a>
-        <h2><a href="">Novo aplicativo do Disney+ causa revolta em brasileiros</a></h2>
-        <p><a href="">O Disney+ ainda não completou um mês no Brasil e já temos o anúncio de que um novo streaming da empresa chegará em breve. Foi divulgado ontem que a companhia vai lançar o Star+, com filmes e séries focados no público adulto e com conteúdo esportivo.</a></p>
-        
-      </section>
-      
-      <section  class="popular">
-        <a href=""><img class="img-fluid" src="img/quantica.jpg" alt="quantica"></a>
-        
-        <h2><a href="">Chineses conquistam a supremacia quântica</a></h2>
-        <p><a href="">Uma equipe de pesquisadores da Universidade de Ciência e Tecnologia da China afirma ter atingido a supremacia quântica. Com o feito, a equipe conseguiu provar que um computador quântico consegue resolver uma tarefa muitas vezes mais rápido do que um computador tradicional.</a></p>
-      </section>
+            <div class="w3-third">
+                <div class="w3-card w3-data" style="min-height:465px">
+                    <h3>C++</h3><br><br>
+					<img src="https://user-images.githubusercontent.com/42747200/46140125-da084900-c26d-11e8-8ea7-c45ae6306309.png" alt="cplusplus-icon" width="250" height="250">
+                    
+                </div>
+            </div>
 
-      <section class="popular">
-        <a href=""><img class="img-fluid" src="img/sol.jpg" alt="maquina"></a>
-        <h2><a href="">China ligou seu “sol artificial”</a></h2>
-        <p><a href="">Foi anunciado nesta semana pela imprensa estatal chinesa, que um reator nuclear localizado no sudoeste da província de Sichuan, e conhecido popularmente como “sol artificial”, foi ligado com sucesso na última sexta-feira no país.</a></p>
-      </section>
+			<div class="w3-third">
+                <div class="w3-card w3-container" style="min-height:480px">
+                    <h3>Java</h3><br><br>
+                   <img src="https://static.cloud-boxloja.com/lojas/wyfyg/produtos/6ddcc295-ee36-4a7f-be1a-ebeb192bacd5.jpg" alt="java-icon" width="250" height="250">
+                </div>
+            </div>
 
-      <section class="popular">
-        <a href=""><img class="img-fluid" src="img/mercedes.jpg" alt="mercedes-logo"></a>
-        <h2><a href="">Mercedes-Benz vai encerrar produção no Brasil</a></h2>
-        <p><a href="">A indústria automobilística nacional sofreu um golpe: a Mercedes-Benz vai encerrar a produção de veículos no Brasil. Segundo a empresa, um dos principais fatores que levaram a essa decisão foi a crise econômica, agravada pela pandemia do novo coronavírus.</a></p>
-      </section>
-    
-    </article>
-    <div class=" botao position-relative">
-       <a href="noticias.html"><div class="position-absolute bottom-0 end-0"><button type="button" class="btn btn-secondary">Ver mais </button></div></a>
-    </div>
+            <div class="w3-third">
+                <div class="w3-card w3-container" style="min-height:480px">
+                    <h3>PostgreSQL</h3><br><br>
+                   <img src="https://user-images.githubusercontent.com/24623425/36042969-f87531d4-0d8a-11e8-9dee-e87ab8c6a9e3.png" alt="psql-icon" width="250" height="250">
+                </div>
+            </div> 
+            <!-- terceiro trio -->               
+            <div class="w3-third">
+                <div class="w3-card w3-container" style="min-height:480px">
+                    <h3>Git | Github</h3><br><br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1024px-Git_icon.svg.png" alt="git-icon" width="250" height="250">
+                    
+                </div>
+            </div>
+            <div class="w3-third">
+                <div class="w3-card w3-container" style="min-height:480px">
+                    <h3>Rails</h3><br><br>
+                    <img src="data:image/png;base64,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" alt="rails-icon" width="250" height="250">
+                    
+                </div>
+            </div>       
+        </div>
+        <!-- Footer -->
+        <footer class="w3-container w3-theme-dark w3-padding-16"> 
+            <div><p>Find me on<a href="https://www.linkedin.com/in/raul-oliveira1231/" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true" style="font-size:12px"> </i></a></a></p></div>
+            <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+                <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+                <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+                <i class="fa fa-chevron-circle-up"></i></span></a>
+            </div>
 
-    <article class="Populares">
-      <section class="popular">
+        </footer>
 
-        <hr>
-        <h2>Mais Recentes</h2>
-        <hr>
+        <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+        <script>
+        // Side navigation
+        function w3_open() {
+        var x = document.getElementById("mySidebar");
+        x.style.width = "100%";
+        x.style.fontSize = "40px";
+        x.style.paddingTop = "10%";
+        x.style.display = "block";
+        }
+        function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        }
 
-        <a href=""><img class="img-fluid" src="img/covid19.jpg" alt="covid19"></a>
-        <h3><a href="">Covid-19: Brasil tem 293 mortes nas últimas 24h; total ultrapassa 196 mil</a></h3>
-        <p><a href="">O Conselho Nacional de Secretários de Saúde (Conass) e o Ministério da Saúde atualizaram, neste domingo (3), os dados sobre a situação da Covid-19 no Brasil. Veja os números do último levantamento com as mortes nas últimas 24h.</a></p>
-        
-      </section>
-      
-      <section  class="popular">
-        <a href=""><img class="img-fluid" src="img/bots.jpg" alt="bots"></a>
-        
-        <h3><a href="">Bots esgotam ingressos muito antes de você tentar comprá-los</a></h3>
-        <p><a href="">Produtos que esgotam quase instantaneamente nas vendas online. Lançamentos que, num piscar de olhos, já não existem mais. Já tentou comprar algo muito tentador em uma Black Friday pela internet?! Ou ingressos… logo que são anunciados e, curiosamente, desaparecem como num passe de mágica? Como assim? Esgotado?!</a></p>
-      </section>
+        // Tabs
+        function openCity(evt, cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        var activebtn = document.getElementsByClassName("testbtn");
+        for (i = 0; i < x.length; i++) {
+            activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " w3-dark-grey";
+        }
 
-      <section class="popular">
-        <a href=""><img class="img-fluid" src="img/astro.jpg" alt="astrônomos"></a>
-        <h3><a href="">Soube do novo mistério cósmico intrigando os astrônomos?</a></h3>
-        <p><a href="">Obviamente, o Universo ainda guarda incontáveis mistérios a serem solucionados. Mas, ultimamente, os astrônomos têm quebrado a cabeça para explicar um enigma cósmico recém-descoberto, uma estrutura que, de momento, vem sendo chamada de ORCs, sigla de Odd Radio Circles – ou “círculos estranhos de rádio” em tradução livre.</a></p>
-      </section>
+        var mybtn = document.getElementsByClassName("testbtn")[0];
+        mybtn.click();
 
-      <section class="popular">
-        <a href=""><img class="img-fluid" src="img/space.jpg" alt="espaço"></a>
-        <h3><a href="">NASA detalha como o espaço afeta o corpo humano</a></h3>
-        <p><a href="">Enquanto pesquisadores trabalham em motores, opções de moradia extraterrestre e meios de conseguir água e energia no espaço, outros cientistas tentam entender como o espaço afeta o corpo humano. Uma boa parte do que eles sabem agora foi reunida em uma coleção de 29 artigos, fruto do trabalho conhecido como The Twins Study, ou Estudo dos Gêmeos, que acompanhou dois astronautas.</a></p>
-      </section>
-    
-    </article>
-    <div class=" botao position-relative">
-       <a href="noticias.html"><div class="position-absolute bottom-0 end-0"><button type="button" class="btn btn-secondary">Ver mais </button></div></a>
-    </div>
-  </main>
+        // Accordions
+        function myAccFunc(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+        }
 
-  <footer>
-    <div class="logo-rodape">
-     <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo ChaseTech"></a>
-    </div>
-    <div class="texto-rodape1">
-      <p><a href="mailto:chasetech@gmail.com">Contato : chasetech@gmail.com</a></p>
-      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-      </svg></a>
-      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-      </svg></a>       
-      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-      </svg></a>
-      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-      </svg></a>
-      <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-      </svg></a>
-      <p><a href="sobreNos.html">Sobre nós</a></p>
-    </div>
-    <div class="texto-rodape2">
-      <p>2020 - 2021 ChaseTech</p>
-    </div>
-  </footer>
-</body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        // Slideshows
+        var slideIndex = 1;
+
+        function plusDivs(n) {
+        slideIndex = slideIndex + n;
+        showDivs(slideIndex);
+        }
+
+        function showDivs(n) {
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+        }
+
+        showDivs(1);
+
+        // Progress Bars
+        function move() {
+        var elem = document.getElementById("myBar");   
+        var width = 5;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width == 100) {
+            clearInterval(id);
+            } else {
+            width++; 
+            elem.style.width = width + '%'; 
+            elem.innerHTML = width * 1  + '%';
+            }
+        }
+        }
+        </script>
+
+    </body>
 </html>
